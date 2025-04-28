@@ -1,0 +1,5 @@
+/data1/cpp_projects/project01/build/CMakeFiles/rebuild_cache.dir
+/data1/cpp_projects/project01/build/CMakeFiles/edit_cache.dir
+/data1/cpp_projects/project01/build/CMakeFiles/test.dir
+/data1/cpp_projects/project01/build/CMakeFiles/run_tests.dir
+/data1/cpp_projects/project01/build/CMakeFiles/utils.dir
