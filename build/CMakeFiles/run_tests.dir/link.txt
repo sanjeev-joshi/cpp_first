@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  --coverage CMakeFiles/run_tests.dir/tests/test_utils.cpp.o  -o run_tests  libutils.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 
