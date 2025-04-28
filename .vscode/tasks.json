@@ -2,12 +2,27 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build application and test binary",
+      "label": "build application binary",
       "type": "shell",
       "command": "bash",
       "args": [
         "-c",
-        "mkdir -p build/test && clang++ -std=c++20 -fprofile-instr-generate -fcoverage-mapping -pthread logger/logger.cpp logger/logger_test.cpp -lgtest -lgtest_main -o build/test/logger_test"
+        "mkdir -p build/app && clang++ -std=c++20 -pthread -I src/logger src/logger/logger.cpp src/main.cpp -o build/app/app"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": ["$gcc"]
+    },
+
+    {
+      "label": "build test binary",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "mkdir -p build/test && clang++ -std=c++20 -fprofile-instr-generate -fcoverage-mapping -pthread src/logger/logger.cpp src/logger/logger_test.cpp test/test.cpp -lgtest -lgtest_main -o build/test/utest"
       ],
       "group": {
         "kind": "build",
@@ -22,7 +37,7 @@
       "command": "bash",
       "args": [
         "-c",
-        "sleep 3 && if [ -f build/test/logger_test ]; then LLVM_PROFILE_FILE=build/test/logger_test.profraw ./build/test/logger_test && /usr/lib/llvm-17/bin/llvm-profdata merge -sparse build/test/logger_test.profraw -o build/test/logger_test.profdata && /usr/lib/llvm-17/bin/llvm-cov show ./build/test/logger_test -instr-profile=build/test/logger_test.profdata -format=html -output-dir=build/test/coverage_html; else echo \"Binary not found. Build failed.\"; fi"
+        "sleep 3 && if [ -f utest ]; then LLVM_PROFILE_FILE=utest.profraw ./utest && /usr/lib/llvm-17/bin/llvm-profdata merge -sparse utest.profraw -o utest.profdata && /usr/lib/llvm-17/bin/llvm-cov show ./utest -instr-profile=utest.profdata -format=html -output-dir=coverage_html; else echo \"Binary not found. Build failed.\"; fi"
       ],
       "group": {
         "kind": "test",
@@ -30,14 +45,15 @@
       },
       "problemMatcher": [],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/build/test"
       }
     },
 
     {
       "label": "build, test, and coverage report",
       "dependsOn": [
-        "build application and test binary",
+        "build application binary",
+        "build test binary",
         "run unit tests and collect coverage"
       ],
       "group": {
