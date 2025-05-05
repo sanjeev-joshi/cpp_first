@@ -1,1 +1,1 @@
-/usr/bin/c++   -pthread   CMakeFiles/utest.dir/src/logger/logger.cpp.o CMakeFiles/utest.dir/src/logger/logger_test.cpp.o CMakeFiles/utest.dir/test/test.cpp.o  -o utest  -lgtest -lgtest_main 
+/usr/bin/clang++   -pthread   CMakeFiles/utest.dir/src/logger/logger.cpp.o CMakeFiles/utest.dir/src/logger/logger_test.cpp.o CMakeFiles/utest.dir/test/test.cpp.o  -o utest  -lgtest -lgtest_main 

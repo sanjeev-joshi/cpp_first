@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/cpp_projects/project_02
+CMAKE_SOURCE_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
+CMAKE_BINARY_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build
 
 # Utility rule file for run_and_coverage.
 
@@ -54,11 +54,11 @@ CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
 include CMakeFiles/run_and_coverage.dir/progress.make
 
 CMakeFiles/run_and_coverage:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running tests, collecting coverage, and generating report"
-	LLVM_PROFILE_FILE=/data1/cpp_projects/project_02/build/test/utest.profraw /data1/cpp_projects/project_02/build/test/utest
-	/usr/lib/llvm-17/bin/llvm-profdata merge -sparse /data1/cpp_projects/project_02/build/test/utest.profraw -o /data1/cpp_projects/project_02/build/test/utest.profdata
-	/usr/lib/llvm-17/bin/llvm-cov show /data1/cpp_projects/project_02/build/test/utest -instr-profile=/data1/cpp_projects/project_02/build/test/utest.profdata -format=html -output-dir=/data1/cpp_projects/project_02/build/test/coverage_html
-	xdg-open /data1/cpp_projects/project_02/build/test/coverage_html/index.html
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running tests, collecting coverage, and generating report"
+	LLVM_PROFILE_FILE=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest.profraw /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest
+	/usr/lib/llvm-17/bin/llvm-profdata merge -sparse /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest.profraw -o /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest.profdata
+	/usr/lib/llvm-17/bin/llvm-cov show /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest -instr-profile=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/utest.profdata -format=html -output-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/coverage_html
+	xdg-open /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/test/coverage_html/index.html
 
 run_and_coverage: CMakeFiles/run_and_coverage
 run_and_coverage: CMakeFiles/run_and_coverage.dir/build.make
@@ -75,6 +75,6 @@ CMakeFiles/run_and_coverage.dir/clean:
 .PHONY : CMakeFiles/run_and_coverage.dir/clean
 
 CMakeFiles/run_and_coverage.dir/depend:
-	cd /data1/cpp_projects/project_02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/cpp_projects/project_02 /data1/cpp_projects/project_02 /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build/CMakeFiles/run_and_coverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/run_and_coverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_and_coverage.dir/depend
 

@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build",
+  "command": "/usr/bin/clang++   -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/inc -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt   -pthread   -std=gnu++2a -o CMakeFiles/app.dir/src/logger/logger.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp",
+  "file": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp"
+},
+{
+  "directory": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build",
+  "command": "/usr/bin/clang++   -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/inc -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt   -pthread   -std=gnu++2a -o CMakeFiles/app.dir/src/main.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/main.cpp",
+  "file": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/main.cpp"
+},
+{
+  "directory": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build",
+  "command": "/usr/bin/clang++   -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/inc -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt   -pthread   -std=gnu++2a -o CMakeFiles/utest.dir/src/logger/logger.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp",
+  "file": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp"
+},
+{
+  "directory": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build",
+  "command": "/usr/bin/clang++   -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/inc -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt   -pthread   -std=gnu++2a -o CMakeFiles/utest.dir/src/logger/logger_test.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger_test.cpp",
+  "file": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger_test.cpp"
+},
+{
+  "directory": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build",
+  "command": "/usr/bin/clang++   -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/inc -I/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt   -pthread   -std=gnu++2a -o CMakeFiles/utest.dir/test/test.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/test/test.cpp",
+  "file": "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/test/test.cpp"
+}
+]

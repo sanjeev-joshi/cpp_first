@@ -1,8 +1,8 @@
-/data1/cpp_projects/project_02/build/CMakeFiles/rebuild_cache.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/run_and_coverage.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/build_test.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/clean_all.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/build_app.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/app.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/edit_cache.dir
-/data1/cpp_projects/project_02/build/CMakeFiles/utest.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/rebuild_cache.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/run_and_coverage.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/build_test.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/clean_all.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/build_app.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/app.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/edit_cache.dir
+/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/utest.dir

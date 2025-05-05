@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/data1/cpp_projects/project_02/src/logger/logger.cpp" "/data1/cpp_projects/project_02/build/CMakeFiles/utest.dir/src/logger/logger.cpp.o"
-  "/data1/cpp_projects/project_02/src/logger/logger_test.cpp" "/data1/cpp_projects/project_02/build/CMakeFiles/utest.dir/src/logger/logger_test.cpp.o"
-  "/data1/cpp_projects/project_02/test/test.cpp" "/data1/cpp_projects/project_02/build/CMakeFiles/utest.dir/test/test.cpp.o"
+  "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp" "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/utest.dir/src/logger/logger.cpp.o"
+  "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger_test.cpp" "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/utest.dir/src/logger/logger_test.cpp.o"
+  "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/test/test.cpp" "/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/utest.dir/test/test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/cpp_projects/project_02
+CMAKE_SOURCE_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
+CMAKE_BINARY_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build
 
 # Utility rule file for build_app.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
 include CMakeFiles/build_app.dir/progress.make
 
 CMakeFiles/build_app:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building the app binary"
-	cd /data1/cpp_projects/project_02 && clang++ -std=c++20 -pthread -I src/logger src/logger/logger.cpp src/main.cpp -o /data1/cpp_projects/project_02/build/app/app
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building the app binary"
+	cd /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first && clang++ -std=c++20 -pthread -I /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger -I /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/mqtt src/logger/logger.cpp src/main.cpp -o /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/app/app
 
 build_app: CMakeFiles/build_app
 build_app: CMakeFiles/build_app.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/build_app.dir/clean:
 .PHONY : CMakeFiles/build_app.dir/clean
 
 CMakeFiles/build_app.dir/depend:
-	cd /data1/cpp_projects/project_02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/cpp_projects/project_02 /data1/cpp_projects/project_02 /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build/CMakeFiles/build_app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/build_app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/build_app.dir/depend
 

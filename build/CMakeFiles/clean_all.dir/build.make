@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/cpp_projects/project_02
+CMAKE_SOURCE_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
+CMAKE_BINARY_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build
 
 # Utility rule file for clean_all.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
 include CMakeFiles/clean_all.dir/progress.make
 
 CMakeFiles/clean_all:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Cleaning up build and coverage files"
-	rm -rf /data1/cpp_projects/project_02/build/test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Cleaning up build and coverage files"
+	rm -rf *
 
 clean_all: CMakeFiles/clean_all
 clean_all: CMakeFiles/clean_all.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/clean_all.dir/clean:
 .PHONY : CMakeFiles/clean_all.dir/clean
 
 CMakeFiles/clean_all.dir/depend:
-	cd /data1/cpp_projects/project_02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/cpp_projects/project_02 /data1/cpp_projects/project_02 /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build/CMakeFiles/clean_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/clean_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_all.dir/depend
 

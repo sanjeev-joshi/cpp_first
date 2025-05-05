@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/cpp_projects/project_02
+CMAKE_SOURCE_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/cpp_projects/project_02/build
+CMAKE_BINARY_DIR = /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/app.dir/flags.make
 
 CMakeFiles/app.dir/src/logger/logger.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/logger/logger.cpp.o: ../src/logger/logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/logger/logger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/logger/logger.cpp.o -c /data1/cpp_projects/project_02/src/logger/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/logger/logger.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/logger/logger.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp
 
 CMakeFiles/app.dir/src/logger/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/logger/logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/cpp_projects/project_02/src/logger/logger.cpp > CMakeFiles/app.dir/src/logger/logger.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp > CMakeFiles/app.dir/src/logger/logger.cpp.i
 
 CMakeFiles/app.dir/src/logger/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/logger/logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/cpp_projects/project_02/src/logger/logger.cpp -o CMakeFiles/app.dir/src/logger/logger.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/logger/logger.cpp -o CMakeFiles/app.dir/src/logger/logger.cpp.s
 
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/main.cpp.o -c /data1/cpp_projects/project_02/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/main.cpp.o -c /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/main.cpp
 
 CMakeFiles/app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/cpp_projects/project_02/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
 
 CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/cpp_projects/project_02/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -95,7 +95,7 @@ app: CMakeFiles/app.dir/src/logger/logger.cpp.o
 app: CMakeFiles/app.dir/src/main.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data1/cpp_projects/project_02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /data1/cpp_projects/project_02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/cpp_projects/project_02 /data1/cpp_projects/project_02 /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build /data1/cpp_projects/project_02/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build /home/sannjeev/Desktop/linux_prog/C++/gtest/cpp_first/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app.dir/depend
 

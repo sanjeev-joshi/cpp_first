@@ -56,14 +56,14 @@ target_link_libraries(utest gtest gtest_main)
 
 # Add custom target to build the application binary
 add_custom_target(build_app
-    COMMAND clang++ -std=c++20 -pthread -I ${inc} ${SOURCE_FILES} ${APP_FILE} -o ${OUT_DIR}/app
+    COMMAND clang++ -std=c++20 -pthread -I ${CMAKE_SOURCE_DIR}/src/logger -I ${CMAKE_SOURCE_DIR}/src/mqtt ${SOURCE_FILES} ${APP_FILE} -o ${OUT_DIR}/app
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     COMMENT "Building the app binary"
 )
 
 # Add custom target to build the test binary with coverage flags
 add_custom_target(build_test
-    COMMAND clang++ -std=c++20 -fprofile-instr-generate -fcoverage-mapping -pthread ${SOURCE_FILES} ${TEST_FILES} -lgtest -lgtest_main -o ${TEST_DIR}/utest
+    COMMAND clang++-17 -std=c++20 -fprofile-instr-generate -fcoverage-mapping -pthread ${SOURCE_FILES} ${TEST_FILES} -lgtest -lgtest_main -o ${TEST_DIR}/utest
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     COMMENT "Building the test binary"
 )
